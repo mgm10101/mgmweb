@@ -27,14 +27,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'maxwell.muthumbi@strathmore.edu';
-        $mail->Password   = 'klhz jlpi srnl jtof';
+        $mail->Username   = '';
+        $mail->Password   = '';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port       = 465;
 
         // Recipients
-        $mail->setFrom('maxwell.muthumbi@strathmore.edu', 'Website Contact Form'); // Use your email as from
-        $mail->addAddress('maxwell.muthumbi@strathmore.edu'); // Where to receive messages
+        $mail->setFrom('', 'Website Contact Form'); // Use your email as from
+        $mail->addAddress(''); // Where to receive messages
         $mail->addReplyTo($email, $name); // So you can reply directly to the sender
 
         // Create beautiful HTML email template
