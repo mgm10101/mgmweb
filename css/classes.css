@@ -1,0 +1,244 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Nunito', sans-serif;
+    background: #f5fdf7;
+    color: #355e3b;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 10%;
+    background: #d6f5d6;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .welcome-title {
+    flex-grow: 1;
+    text-align: center;
+}
+
+header .welcome-title {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.navbar {
+    width: 100%; /* Ensure navbar takes full width */
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly; 
+    width: 100%; 
+    list-style: none; 
+    padding: 0; 
+    margin: 0;
+}
+
+.menu a {
+    color: #355e3b;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+    padding: 10px 15px; /* Add equal padding around each link */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.menu a:hover {
+    color: #6ab04c;
+}
+
+/* For mobile menu (hamburger) */
+.menu-toggle {
+    display: none; /* Hide checkbox */
+}
+
+.menu-icon {
+    display: none; /* Initially hidden for desktop */
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(to bottom right, #d6f5d6, #f5fdf7);
+    text-align: center;
+    padding: 100px 10%;
+}
+
+#hero h1 {
+    font-size: 3.5rem;
+    color: #2e7d32;
+}
+
+#hero p {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    color: #4caf50;
+}
+.image-container-classes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+/* Button styles */
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 30px;
+    background: #6ab04c;
+    color: #ffffff;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #4caf50;
+}
+
+/* Classes Section */
+.full-classes {
+    margin-top: 50px;
+    padding: 0 10%;
+    text-align: center;
+}
+
+.full-classes h3 {
+    font-size: 2.2rem;
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+
+/* Class Cards Section */
+.full-classes {
+    margin-top: 50px;
+    padding: 0 10%;
+    text-align: center;
+}
+
+.full-classes h3 {
+    font-size: 2.2rem;
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+
+/* Class Cards Container */
+.class-cards-container {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically */
+    gap: 20px; /* Space between cards */
+    margin-top: 30px;
+}
+
+/* Individual Class Card */
+.class-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover Effect for Class Cards */
+.class-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.class-card img {
+    border-radius: 15px;
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.class-card p {
+    font-size: 1.2rem;
+    color: #355e3b;
+    line-height: 1.8;
+}
+
+
+/* Images */
+.class2 img {
+    border-radius: 15px;
+    width: 30%;
+    height: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 50px;
+    background: #d6f5d6;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #355e3b;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+footer .footer-bottom {
+    text-align: center;
+}
+.footer a{
+    text-decoration: none;
+    color: #4caf50;
+    font-weight: bolder;
+}
+
+/* Learn Section */
+.learn {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    text-align: center;
+}
+
+.learn p {
+    font-size: 1.2rem;
+    color: #355e3b;
+    line-height: 1.8;
+}
+
+.learn .links {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #6ab04c;
+    color: #ffffff;
+    border-radius: 30px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.learn .links:hover {
+    background: #4caf50;
+}

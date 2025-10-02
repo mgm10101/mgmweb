@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MGM Academy - Contact Us</title>
+    <link rel="stylesheet" href="../css/contact.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap" rel="stylesheet" />
+      <!-- Link to phones.css for phones -->
+    <link rel="stylesheet" media="only screen and (max-width: 767px)" href="../css/phones.css" />
+    <!-- Link to tablets.css for tablets and small laptops -->
+    <link rel="stylesheet" media="only screen and (min-width: 768px) and (max-width: 1080px)" href="../css/tablets.css" />
+    <link rel="icon" type="image/png" href="../favicon.ico" />
+  </head>
+  <body>
+    <div class="image-container-contact">
+      <div class="logo">
+        <a href="../index.html"
+          ><img src="../web_png/MGM-nobg.png" class="logo" width="200px" alt="MGM Academy Logo" />
+        </a>
+      </div>
+      <h1 class="welcome" style="font-size: 65px; color: #4e2a84;">
+        Become a part of the <span id="rby">MGM</span> family!
+      </h1>
+    </div>
+
+    <div id="header"> </div>
+
+    <main>
+      <h1 class="contact-heading" style="text-align: center; color: #4e2a84;">Get in touch with us</h1>
+      
+      <div class="contacts">
+        <!-- Call Us Card -->
+        <div class="contact-item calls">
+            <h2>Call Us</h2>
+            <img src="../images/phone.png" alt="Phone Icon">
+            <p>+254 719 214 214</p>
+            <p>+254 784 214 214</p>
+        </div>
+    
+        <!-- Visit Us Card -->
+        <div class="contact-item location">
+            <h2>Visit Us</h2>
+            <img src="../images/location.png" alt="Location Icon">
+            <p>Malaa off Kangundo Road</p>
+            <p>Just before Twin Falls Estate</p>
+        </div>
+    
+        <!-- Email Us Card -->
+        <div class="contact-item emails">
+            <h2>Email Us</h2>
+            <img src="../images/email.png" alt="Email Icon">
+            <div class="direct-email">
+                <a href="mailto:info@mgmacademy.org" class="email-link">info@mgmacademy.org</a>
+                <a href="mailto:mgmacademys@gmail.com" class="email-link">mgmacademys@gmail.com</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Email Form Card -->
+    <form class="email-form" id="contactForm" method="post" action="../php/sendMail.php" >
+        <h2>Send Us a Message</h2>
+        
+        <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name ="name" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="phone">Phone Number (Optional)</label>
+            <input type="tel" id="phone" name ="phone">
+        </div>
+        
+        <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" required name="message"></textarea>
+        </div>
+        
+        <button type="submit" class="submit-button" >Send Message</button>
+        </div>
+    </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div id="footer"></div>
+    </footer>
+
+    <script src="../js/mgm.js"></script>
+    <script src="../js/loadHeaderFooter.js"></script>
+    
+    <script>
+      // Existing mailto functions
+      function sendFirstEmail() {
+        var recipient = "info@mgmacademy.org";
+        var subject = "RE: Inquiry";
+        var body = "Hello,%0D%0A%0D%0AThis is an auto-generated body text.%0D%0APlease feel free to edit it as needed.%0D%0AIf you would like us to call you please include your phone number at the end of the email.%0D%0AThank you.";
+        var mailtoLink = "mailto:" + recipient + "?subject=" + subject + "&body=" + body;
+        window.location.href = mailtoLink;
+      }
+
+      function sendSecondEmail() {
+        var recipient = "mgmacademys@gmail.com";
+        var subject = "RE: Inquiry";
+        var body = "Hello,%0D%0A%0D%0AThis is an auto-generated body text.%0D%0APlease feel free to edit it as needed.%0D%0AIf you would like us to call you please include your phone number at the end of the email.%0D%0AThank you.";
+        var mailtoLink = "mailto:" + recipient + "?subject=" + subject + "&body=" + body;
+        window.location.href = mailtoLink;
+      }
+      
+    </script>
+    
+  </body>
+</html>

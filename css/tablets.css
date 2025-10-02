@@ -1,0 +1,324 @@
+/* ==================== */
+/* TABLET STYLES (768px - 1080px) */
+/* ==================== */
+
+/* Base Adjustments */
+body {
+    font-size: 17px;
+}
+
+/* Header */
+header {
+    padding: 20px 5%;
+}
+
+.mainHead {
+    font-size: 28px;
+}
+
+.logo {
+    width: 180px;
+}
+
+/* Navigation */
+.menu {
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.menu a {
+    padding: 12px 10px;
+    font-size: 0.9rem;
+}
+
+/* Hero Section */
+#hero {
+    padding: 80px 5%;
+}
+
+#hero h1 {
+    font-size: 2.5rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+}
+
+/* Card Sections */
+.features-section,
+.testimonials-section {
+    padding: 60px 5%;
+}
+
+.features-grid,
+.testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.section-title {
+    font-size: 2rem;
+}
+
+/* Content Cards */
+.content-card {
+    flex-direction: column;
+    padding: 30px;
+    gap: 30px;
+}
+
+.content-card.reverse {
+    flex-direction: column;
+}
+
+/* Footer */
+footer .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/*END OF INDEX*/
+/* ==================== */
+/* ABOUT PAGE */
+/* ==================== */
+
+/* Base Adjustments */
+body {
+    font-size: 17px;
+}
+
+/* Header */
+header {
+    padding: 20px 5%;
+}
+
+.logo img {
+    width: 180px;
+}
+
+/* Navigation */
+.menu {
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.menu a {
+    padding: 12px 10px;
+    font-size: 0.9rem;
+}
+
+/* Hero Section */
+.image-container-about h1 {
+    font-size: 2.5rem;
+}
+
+/* Content Sections */
+.about, .mission, .services {
+    padding: 30px;
+}
+
+/* Mission/Vision Cards */
+.mission .misvis {
+    flex-direction: row;
+    gap: 20px;
+}
+
+.mission-card, .vision-card {
+    flex: 1;
+}
+
+.values-card {
+    margin-top: 20px;
+}
+
+/* Services Cards */
+.services {
+    padding: 30px 5%;
+}
+
+.offerings-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+/* Footer */
+footer .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+/*END OF ABOUT*/
+/* ==================== */
+/* CLASSES */
+/* ==================== */
+
+/* Base Adjustments */
+body {
+    font-size: 17px;
+}
+
+/* Header */
+header {
+    padding: 20px 5%;
+}
+
+.welcome-title {
+    font-size: 2.5rem !important;
+}
+
+/* Navigation */
+.menu {
+    justify-content: space-around;
+    gap: 5px;
+}
+
+.menu a {
+    padding: 10px;
+    font-size: 0.9rem;
+}
+
+/* Hero Section */
+#hero {
+    padding: 80px 5%;
+}
+
+#hero h1 {
+    font-size: 2.8rem;
+}
+
+/* Class Cards */
+.image-container-classes {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.class-cards-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.class-card {
+    flex: 0 0 45%;
+    margin: 10px;
+}
+
+.class-card img {
+    max-width: 70% !important;
+}
+
+/* Footer */
+footer .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+/*END OF CLASSES*/
+/* ==================== */
+/* CURRICULAR */
+/* ==================== */
+
+/* Base Adjustments */
+body {
+    font-size: 17px;
+}
+
+/* Header */
+header {
+    padding: 20px 5%;
+}
+
+.logo img {
+    width: 180px;
+}
+
+/* Navigation */
+.menu {
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.menu a {
+    padding: 12px 10px;
+    font-size: 0.9rem;
+}
+
+/* Hero Section */
+#hero {
+    padding: 80px 5%;
+}
+
+#hero h1 {
+    font-size: 2.5rem;
+}
+
+/* Extra Curricular Cards */
+.card {
+    max-width: 80%;
+    padding: 25px;
+}
+
+.card h3 {
+    font-size: 1.8rem;
+}
+
+/* Footer */
+footer .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+/*END OF CURRICULAR*/
+/* ==================== */
+/* CONTACT*/
+/* ==================== */
+
+/* Base Adjustments */
+body {
+    font-size: 17px;
+}
+
+/* Header */
+header {
+    padding: 20px 5%;
+}
+
+.logo img {
+    width: 180px;
+}
+
+/* Navigation */
+.menu {
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.menu a {
+    padding: 12px 10px;
+    font-size: 0.9rem;
+}
+
+/* Contact Hero Section */
+.image-container-contact h1 {
+    font-size: 2.5rem;
+}
+
+/* Contact Cards */
+.contacts {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact-item {
+    max-width: 45%;
+}
+
+/* Contact Form */
+.email-form {
+    max-width: 80%;
+}
+
+/* Footer */
+footer .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+/*END OF CONTACT*/
