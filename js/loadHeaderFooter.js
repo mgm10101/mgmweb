@@ -1,10 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
+    // Check if we're on root (index.html) or inside /home/
     const isRoot = window.location.pathname === "/" || window.location.pathname.endsWith("index.html");
-    const prefix = isRoot ? "html/" : "";
+    const prefix = isRoot ? "home/" : "";
 
-    // load header + footer with correct relative path
-    loadHTML(prefix + 'header.html', 'header', setActiveLink);
-    loadHTML(prefix + 'footer.html', 'footer');
+    // Load header and footer
+    loadHTML(prefix + "header.html", "header", setActiveLink);
+    loadHTML(prefix + "footer.html", "footer");
 });
 
 function loadHTML(url, elementId, callback) {
@@ -14,21 +15,32 @@ function loadHTML(url, elementId, callback) {
             return response.text();
         })
         .then(data => {
-            document.getElementById(elementId).innerHTML = data;
-            if (callback) callback();
+            const el = document.getElementById(elementId);
+            if (el) {
+                el.innerHTML = data;
+                if (callback) callback();
+            }
         })
-        .catch(error => console.error('Error loading HTML:', error));
+        .catch(error => console.error("Error loading HTML:", error));
 }
 
 function setActiveLink() {
-    const navLinks = document.querySelectorAll('.nav-link');
-    const currentPage = window.location.pathname.split("/").pop();
+    const navLinks = document.querySelectorAll(".nav-link");
+    let currentPage = window.location.pathname.split("/").pop();
+
+    // Default to index.html if empty (root path "/")
+    if (currentPage === "") {
+        currentPage = "index.html";
+    }
 
     navLinks.forEach(link => {
-        if (link.getAttribute('href') === currentPage) {
-            link.classList.add('active');
+        const href = link.getAttribute("href");
+
+        // Match index.html with home link too
+        if (href === currentPage || (currentPage === "index.html" && href.includes("home"))) {
+            link.classList.add("active");
         } else {
-            link.classList.remove('active');
+            link.classList.remove("active");
         }
     });
 }
