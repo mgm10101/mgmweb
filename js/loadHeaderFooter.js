@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // if we are on index.html (root), fetch from /html/
     const isRoot = window.location.pathname === "/" || window.location.pathname.endsWith("index.html");
     const prefix = isRoot ? "html/" : "";
 
+    // load header + footer with correct relative path
     loadHTML(prefix + 'header.html', 'header', setActiveLink);
     loadHTML(prefix + 'footer.html', 'footer');
 });
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
 function loadHTML(url, elementId, callback) {
     fetch(url)
         .then(response => {
-            if (!response.ok) throw new Error(response.statusText);
+            if (!response.ok) throw new Error(response.status + " " + response.statusText);
             return response.text();
         })
         .then(data => {
