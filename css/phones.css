@@ -11,6 +11,14 @@ body {
     font-size: 16px;
     line-height: 1.6;
     padding: 0;
+    overflow-x: hidden !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+* {
+    box-sizing: border-box !important;
 }
 
 /* Header & Logo - Global */
@@ -227,71 +235,77 @@ figcaption {
 
 /* Footer */
 footer {
-    padding: 32px 5%;
-    text-align: center;
+    padding: 32px 5% !important;
+    text-align: center !important;
 }
 
 footer .footer-content {
-    flex-direction: column;
-    gap: 24px;
-    text-align: center;
-    align-items: center;
+    flex-direction: column !important;
+    gap: 24px !important;
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
 }
 
 footer .footer-content > * {
-    width: 100%;
-    text-align: center;
+    width: 100% !important;
+    text-align: center !important;
 }
 
 footer .contact-info,
 footer .useful-links,
 footer .class-links {
-    text-align: center;
-    width: 100%;
+    text-align: center !important;
+    width: 100% !important;
 }
 
 footer .contact-info p {
-    text-align: center;
-    margin: 0 auto;
+    text-align: center !important;
+    margin: 0 auto !important;
+    padding-left: 0 !important;
 }
 
 footer .useful-links h4,
 footer .class-links h4 {
-    text-align: center;
-    margin-bottom: 12px;
+    text-align: center !important;
+    margin-bottom: 12px !important;
 }
 
 footer .useful-links ul,
 footer .class-links ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    text-align: center;
-    display: inline-block;
+    list-style: none !important;
+    padding: 0 !important;
+    padding-left: 0 !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    display: block !important;
+    width: 100% !important;
 }
 
 footer .useful-links ul li,
 footer .class-links ul li {
-    text-align: center;
-    margin: 8px 0;
+    text-align: center !important;
+    margin: 8px 0 !important;
+    list-style: none !important;
+    padding-left: 0 !important;
 }
 
 footer .useful-links ul li a,
 footer .class-links ul li a {
-    text-align: center;
-    display: inline-block;
+    text-align: center !important;
+    display: inline-block !important;
 }
 
 footer .footer-bottom {
-    margin-top: 24px;
-    padding-top: 24px;
-    border-top: 1px solid rgba(53, 94, 59, 0.1);
-    text-align: center;
+    margin-top: 24px !important;
+    padding-top: 24px !important;
+    border-top: 1px solid rgba(53, 94, 59, 0.1) !important;
+    text-align: center !important;
 }
 
 footer .footer-bottom p {
-    text-align: center;
-    margin: 8px 0;
+    text-align: center !important;
+    margin: 8px 0 !important;
 }
 
 /* ==================== */
@@ -300,33 +314,36 @@ footer .footer-bottom p {
 
 /* Image Container - About */
 .image-container-about {
-    flex-direction: column;
-    padding: 40px 5%;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+    flex-direction: column !important;
+    padding: 40px 5% !important;
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 20px !important;
 }
 
 .image-container-about .logo {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    margin: 0 auto !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
 }
 
 .image-container-about .logo a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 0 auto !important;
+    width: 100% !important;
 }
 
 .image-container-about .logo img {
-    width: 140px;
-    margin: 0 auto;
-    display: block;
+    width: 140px !important;
+    min-width: 140px !important;
+    margin: 0 auto !important;
+    display: block !important;
+    max-width: 140px !important;
 }
 
 .welcome {
@@ -498,20 +515,39 @@ main {
 
 /* Image Container - Curricular */
 .image-container-curricular {
-    flex-direction: column;
-    padding: 40px 5%;
-    align-items: center;
-    text-align: center;
-    gap: 20px;
+    flex-direction: column !important;
+    padding: 40px 5% !important;
+    align-items: center !important;
+    text-align: center !important;
+    justify-content: center !important;
+    gap: 20px !important;
+    width: 100% !important;
 }
 
 .image-container-curricular .logo {
-    margin: 0 auto;
+    margin: 0 auto !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    flex-shrink: 0 !important;
+}
+
+.image-container-curricular .logo a {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 0 auto !important;
+    width: 100% !important;
 }
 
 .image-container-curricular .logo img {
-    width: 140px;
-    margin-bottom: 0;
+    width: 140px !important;
+    min-width: 140px !important;
+    max-width: 140px !important;
+    margin: 0 auto !important;
+    margin-bottom: 0 !important;
+    display: block !important;
 }
 
 .image-container-curricular .welcome {
@@ -525,18 +561,25 @@ main {
 
 /* Content Sections */
 main {
-    padding: 24px 5%;
+    padding: 24px 5% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
 }
 
 .extra {
-    text-align: center;
-    margin-bottom: 32px;
-    padding: 0 10px;
+    text-align: center !important;
+    margin-bottom: 32px !important;
+    padding: 0 10px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
 }
 
 .extra h2 {
-    font-size: 1.75rem;
-    margin-bottom: 16px;
+    font-size: 1.75rem !important;
+    margin-bottom: 16px !important;
 }
 
 .extra p {
@@ -553,26 +596,49 @@ main {
 
 /* Extra Curricular Cards */
 .card {
-    max-width: 100%;
-    padding: 24px;
-    margin: 0 auto 32px;
-    border-radius: 16px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    max-width: 100% !important;
+    width: calc(100% - 0px) !important;
+    padding: 24px !important;
+    margin: 0 auto 32px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    border-radius: 16px !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08) !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
 }
 
 .card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
+    font-size: 1.5rem !important;
+    margin-bottom: 20px !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+}
+
+.card-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
 }
 
 .card-content img {
-    border-radius: 12px;
-    margin-bottom: 20px;
+    border-radius: 12px !important;
+    margin-bottom: 20px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    box-sizing: border-box !important;
+    display: block !important;
 }
 
 .card p {
-    font-size: 1rem;
-    line-height: 1.7;
+    font-size: 1rem !important;
+    line-height: 1.7 !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    width: 100% !important;
+    max-width: 100% !important;
 }
 
 .learn {
@@ -626,24 +692,27 @@ main {
 
 /* Contact Cards */
 .contacts {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
-    padding: 24px 5%;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 100%;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 24px !important;
+    padding: 24px 5% !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
 }
 
 .contact-item {
-    max-width: 100%;
-    width: 100%;
-    padding: 28px 24px;
-    border-radius: 16px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    margin: 0 auto;
-    text-align: center;
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 28px 24px !important;
+    border-radius: 16px !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08) !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 .contact-item h2 {
