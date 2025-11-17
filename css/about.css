@@ -32,9 +32,26 @@ header .welcome-title {
 .image-container-about{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 20px 10%;
 }
-.logo img {
-    width: 30%;
+
+.image-container-about .logo {
+    flex-shrink: 0;
+}
+
+.image-container-about .logo img {
+    width: 180px;
+    min-width: 180px;
+}
+
+.welcome {
+    flex-grow: 1;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 65px;
 }
 
 .navbar {

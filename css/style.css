@@ -26,16 +26,22 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 20px;
     font-size: 30px;
+    width: 100%;
 }
 
 header .welcome-title {
     flex-grow: 1;
     text-align: center;
+    white-space: nowrap;
+    font-size: 63px;
 }
 
 .logo {
-    width: 40%;
+    width: 180px;
+    min-width: 180px;
+    flex-shrink: 0;
 }
 
 .navbar {
