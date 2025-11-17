@@ -2,6 +2,8 @@
 /* MOBILE STYLES (≤ 767px) */
 /* ==================== */
 
+@media screen and (max-width: 767px) {
+
 /* ==================== */
 /* GLOBAL MOBILE STYLES */
 /* ==================== */
@@ -779,3 +781,5 @@ main {
 }
 
 /* Footer - All Pages (duplicate removed - using styles from top of file) */
+
+} /* End of @media screen and (max-width: 767px) */
