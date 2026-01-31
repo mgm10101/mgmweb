@@ -3,79 +3,246 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MGM Academy</title>
-    <link rel="stylesheet" href="../css/curricular.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap" rel="stylesheet" />
-     <!-- Link to phones.css for phones -->
-    <link rel="stylesheet" media="screen and (max-width: 767px)" href="../css/phones.css?v=2" />
-    <!-- Link to tablets.css for tablets and small laptops -->
-    <link rel="stylesheet" media="only screen and (min-width: 768px) and (max-width: 1080px)" href="../css/tablets.css" />
-    <link rel="icon" type="image/png" href="../favicon.ico" />
+    <title>Extra-Curricular Activities | MGM Academy</title>
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   </head>
   <body>
-    <div class="image-container-curricular">
-      <div class="logo">
-        <a href="../index.html"><img src="../web_png/MGM-nobg.png" class="logo" alt="MGM Academy Logo"/></a>
+      
+      <!-- Navigation -->
+       <header class="header"> 
+      <div id="header"></div>
+     </header>
+
+    <!-- Curricular Hero Section -->
+    <section class="page-hero curricular-hero">
+      <div class="container">
+        <div class="page-hero-content">
+          <h1 class="page-title">Our Children Must <span class="highlight">PLAY!</span></h1>
+          <p class="page-subtitle">Learning Through Fun, Adventure, and Exploration</p>
+        </div>
       </div>
-      <h1 class="welcome">Our children must <span id="rbyg">PLAY!</span></h1>
-    </div>
-    <div id="header"></div> 
+    </section>
+
     <main>
-      <div class="extra">
-        <h2>Extra Curricular Activities</h2>
-        <p>At MGM Academy we believe learning should not be confined to the classroom.</p>
-        <p>Therefore we explore all areas of education to nurture your child to be the best they can be. In and out of the class.</p>
-        <p class="bug">Below are some of our activities</p>
-      </div>
-      
-      <!-- Swimming Card -->
-      <div class="card">
-        <h3>Swimming</h3>
-        <div class="card-content">
-          <img src="../images/swimming.jpg" alt="Swimming" />
-          <p>The students are taken weekly for swimming and this starts at the daycare stage. They start by being introduced to the water slowly, however, towards the end of the term, they are confident and ready for the swimming lessons.</p>
+      <!-- Introduction Section -->
+      <section class="curricular-intro">
+        <div class="container">
+          <div class="intro-content">
+            <h2>Extra Curricular Activities</h2>
+            <p>At MGM Academy, we believe learning should not be confined to the classroom. We explore all areas of education to nurture your child to be the best they can be: both in and out of the classroom.</p>
+            <p>Our extracurricular programs are designed to develop physical skills, creativity, social awareness, and a sense of adventure in every child.</p>
+            <p class="intro-highlight">Below are some of our exciting activities:</p>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <!-- Sports Day Card -->
-      <div class="card">
-        <h3>Sports Day</h3>
-        <div class="card-content">
-          <img src="../images/sports.jpg" alt="Sports Day" />
-          <p>We spend loads of our time playing and exercising. How about some healthy competition with our community of parents, staff, and children?</p>
-        </div>
-      </div>
+      <!-- Activities Grid -->
+      <section class="activities-section">
+        <div class="container">
+          <div class="activities-grid">
+            <!-- Swimming -->
+            <div class="activity-card">
+              <div class="activity-icon">
+                <i class="fas fa-swimmer"></i>
+              </div>
+              <div class="activity-image">
+                <img src="web_png/swimming.png" alt="Swimming Lessons at MGM Academy" />
+              </div>
+              <div class="activity-content">
+                <h3>Swimming</h3>
+                <p>The students are taken weekly for swimming, starting at the daycare stage. They begin by being introduced to the water slowly, but by the end of the term, they are confident and ready for full swimming lessons. Water safety and basic strokes are taught by certified instructors in a safe, supervised environment.</p>
+              </div>
+            </div>
 
-      <!-- Field Trips Card -->
-      <div class="card">
-        <h3>Field Trips</h3>
-        <div class="card-content">
-          <img src="../images/field.jpg" alt="Field Trips" />
-          <p>MGM academy believes that taking students out of their environment to different places to explore this opens up their minds to the opportunities that are available to them and gives them valuable insight into our country.</p>
-        </div>
-      </div>
+            <!-- Sports Day -->
+            <div class="activity-card">
+              <div class="activity-icon">
+                <i class="fas fa-running"></i>
+              </div>
+              <div class="activity-image">
+                <img src="images/football.jpg" alt="Sports Day Activities" />
+              </div>
+              <div class="activity-content">
+                <h3>Sports Day</h3>
+                <p>We spend loads of time playing and exercising! Our Sports Day brings healthy competition to our community of parents, staff, and children. Events include relay races, obstacle courses, ball games, and fun team challenges that promote physical fitness, teamwork, and sportsmanship.</p>
+              </div>
+            </div>
 
-      <!-- Talent Show Card -->
-      <div class="card">
-        <h3>Talent Show</h3>
-        <div class="card-content">
-          <img src="../images/talent.jpg" alt="Talent Show" />
-          <p>During the term, the students are introduced to music, dance, and acting, which is showcased at the end of the year where parents and family see what talented children they have.</p>
+            <!-- Field Trips -->
+            <div class="activity-card">
+              <div class="activity-icon">
+                <i class="fas fa-bus"></i>
+              </div>
+              <div class="activity-image">
+                <img src="web_png/fieldtrip.jpg" alt="Educational Field Trips" />
+              </div>
+              <div class="activity-content">
+                <h3>Field Trips</h3>
+                <p>MGM Academy believes in taking students out of their environment to explore different places. These trips open their minds to new opportunities and provide valuable insight into our country. Destinations include museums, farms, nature reserves, historical sites, and science centers.</p>
+              </div>
+            </div>
+
+            <!-- Talent Show -->
+            <div class="activity-card">
+              <div class="activity-icon">
+                <i class="fas fa-theater-masks"></i>
+              </div>
+              <div class="activity-image">
+                <img src="images/talent.png" alt="Talent Show Performances" />
+              </div>
+              <div class="activity-content">
+                <h3>Talent Show</h3>
+                <p>During the term, students are introduced to music, dance, and acting. These skills are showcased in our annual talent show where parents and family can see the amazing talents of their children. This event builds confidence, creativity, and performance skills in a supportive environment.</p>
+              </div>
+            </div>
+    <!-- Additional Activities -->
+            <!--Coming soon
+        
+            <div class="activity-card">
+              <div class="activity-icon">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+              <div class="activity-content">
+                <h3>Arts & Crafts Club</h3>
+                <p>Our Arts & Crafts Club allows children to explore various creative mediums including painting, drawing, pottery, and sculpture. This program develops fine motor skills, creativity, and self-expression through hands-on artistic projects.</p>
+              </div>
+            </div>
+
+            <div class="activity-card">
+              <div class="activity-icon">
+                <i class="fas fa-leaf"></i>
+              </div>
+              <div class="activity-content">
+                <h3>Eco Warriors Club</h3>
+                <p>Students learn about environmental conservation through practical activities like gardening, recycling projects, and nature walks. This club fosters environmental stewardship and teaches children the importance of protecting our planet.</p>
+              </div>
+            </div>
+
+            <div class="activity-card">
+              <div class="activity-icon">
+                <i class="fas fa-music"></i>
+              </div>
+              <div class="activity-content">
+                <h3>Music & Dance</h3>
+                <p>Regular music and dance sessions help children develop rhythm, coordination, and musical appreciation. From traditional dances to modern movements, children enjoy expressing themselves through music and movement.</p>
+              </div>
+            </div>
+
+            <div class="activity-card">
+              <div class="activity-icon">
+                <i class="fas fa-book-reader"></i>
+              </div>
+              <div class="activity-content">
+                <h3>Storytelling & Drama</h3>
+                <p>Through storytelling sessions and drama activities, children develop language skills, confidence, and imagination. These sessions help with public speaking, emotional expression, and creative thinking.</p>
+              </div>
+            </div>
+          </div>-->
         </div>
-      </div>
-      
+      </section>
+    
+
+      <!-- CTA Section -->
+      <section class="curricular-cta">
+        <div class="container">
+          <div class="cta-content">
+            <h2>Ready to Join the Fun?</h2>
+            <p>Discover how our extracurricular activities can enrich your child's learning experience and help them develop new skills and friendships.</p>
+            <div class="cta-buttons">
+              <a href="contact.html" class="btn btn-primary">
+                <i class="fas fa-phone"></i> Contact Us
+              </a>
+              <a href="classes.html" class="btn btn-secondary">
+                <i class="fas fa-graduation-cap"></i> View Our Classes
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <div class="learn">
-      <p>Would you like to reach out to us?</p>
-      <p>Follow the link to find our contact information</p>
-      <p>Or use the menu (mobile and tablets) or navigation bar (computers)</p>
-      <a href="contact.html">Click here</a>
-    </div>
-    
-    <div id="footer"></div>
-    <script src="../js/mgm.js"></script>
-    <script src="../js/loadHeaderFooter.js"></script>
+    <!-- Footer Section -->
+    <footer id="footer"></footer>
+
+    <!-- JavaScript -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const menuIcon = document.querySelector('.menu-icon');
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        if (menuIcon) {
+          menuIcon.addEventListener('click', function(e) {
+            e.stopPropagation();
+          });
+        }
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function() {
+          if (menuToggle && menuToggle.checked) {
+            menuToggle.checked = false;
+          }
+        });
+        
+        // Close menu when clicking a link
+        navLinks.forEach(link => {
+          link.addEventListener('click', function() {
+            if (menuToggle && menuToggle.checked) {
+              menuToggle.checked = false;
+            }
+          });
+        });
+        
+        // Activity cards animation
+        const observerOptions = {
+          threshold: 0.1,
+          rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('animate-in');
+            }
+          });
+        }, observerOptions);
+        
+        // Observe all activity cards
+        document.querySelectorAll('.activity-card').forEach(card => {
+          observer.observe(card);
+        });
+        
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              window.scrollTo({
+                top: targetElement.offsetTop - 100,
+                behavior: 'smooth'
+              });
+            }
+          });
+        });
+      });
+    </script>
+    <script src="js/loadFooter.js"></script>
   </body>
 </html>
