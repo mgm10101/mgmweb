@@ -3,120 +3,382 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MGM Academy - Contact Us</title>
-    <link rel="stylesheet" href="../css/contact.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap" rel="stylesheet" />
-      <!-- Link to phones.css for phones -->
-    <link rel="stylesheet" media="screen and (max-width: 767px)" href="../css/phones.css?v=2" />
-    <!-- Link to tablets.css for tablets and small laptops -->
-    <link rel="stylesheet" media="only screen and (min-width: 768px) and (max-width: 1080px)" href="../css/tablets.css" />
-    <link rel="icon" type="image/png" href="../favicon.ico" />
+    <title>Contact Us | MGM Academy</title>
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   </head>
   <body>
-    <div class="image-container-contact">
-      <div class="logo">
-        <a href="../index.html"
-          ><img src="../web_png/MGM-nobg.png" class="logo" width="200px" alt="MGM Academy Logo" />
-        </a>
-      </div>
-      <h1 class="welcome" style="font-size: 65px; color: #4e2a84;">
-        Become a part of the <span id="rby">MGM</span> family!
-      </h1>
-    </div>
 
-    <div id="header"> </div>
+      
+      <!-- Navigation --> 
+    <header class="header"> 
+      <div id="header"></div>
+     </header>
+
+    <!-- Contact Hero Section -->
+    <section class="page-hero contact-hero">
+      <div class="container">
+        <div class="page-hero-content">
+          <h1 class="page-title">Become Part of the <span class="highlight">MGM</span> Family!</h1>
+          <p class="page-subtitle">Get in touch with us for admissions, tours, or any inquiries</p>
+        </div>
+      </div>
+    </section>
 
     <main>
-      <h1 class="contact-heading" style="text-align: center; color: #4e2a84;">Get in touch with us</h1>
-      
-      <div class="contacts">
-        <!-- Call Us Card -->
-        <div class="contact-item calls">
-            <h2>Call Us</h2>
-            <img src="../images/phone.png" alt="Phone Icon">
-            <p>+254 719 214 214</p>
-            <p>+254 784 214 214</p>
-        </div>
-    
-        <!-- Visit Us Card -->
-        <div class="contact-item location">
-            <h2>Visit Us</h2>
-            <img src="../images/location.png" alt="Location Icon">
-            <p>Malaa off Kangundo Road</p>
-            <p>Just before Twin Falls Estate</p>
-        </div>
-    
-        <!-- Email Us Card -->
-        <div class="contact-item emails">
-            <h2>Email Us</h2>
-            <img src="../images/email.png" alt="Email Icon">
-            <div class="direct-email">
-                <a href="mailto:info@mgmacademy.org" class="email-link">info@mgmacademy.org</a>
-                <a href="mailto:mgmacademys@gmail.com" class="email-link">mgmacademys@gmail.com</a>
+      <!-- Contact Information Section -->
+      <section class="contact-info-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Get in Touch With Us</h2>
+            <p class="section-subtitle">We'd love to hear from you and answer any questions you may have</p>
+          </div>
+          
+          <div class="contact-methods">
+            <!-- Call Us -->
+            <div class="contact-method">
+              <div class="method-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="method-content">
+                <h3>Call Us</h3>
+                <div class="contact-details">
+                  <a href="tel:+254719214214" class="contact-link">
+                    <i class="fas fa-phone"></i> +254 719 214 214
+                  </a>
+                  <a href="tel:+254784214214" class="contact-link">
+                    <i class="fas fa-phone"></i> +254 784 214 214
+                  </a>
+                </div>
+                <p class="method-description">Our phone lines are open Monday to Friday, 7:30 AM to 5:00 PM</p>
+              </div>
             </div>
+
+            <!-- Visit Us -->
+            <div class="contact-method">
+              <div class="method-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="method-content">
+                <h3>Visit Us</h3>
+                <div class="contact-details">
+                  <p><i class="fas fa-location-dot"></i> Malaa, Kangundo Road</p>
+                  <p><i class="fas fa-signs-post"></i> Just before Twin Falls Estate</p>
+                </div>
+                <p class="method-description">Schedule a campus tour to see our facilities and meet our staff</p>
+                <a href="#contactForm" class="btn btn-secondary">Schedule a Tour</a>
+              </div>
+            </div>
+
+            <!-- Email Us -->
+            <div class="contact-method">
+              <div class="method-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="method-content">
+                <h3>Email Us</h3>
+                <div class="contact-details">
+                  <a href="mailto:info@mgmacademy.org" class="contact-link">
+                    <i class="fas fa-envelope"></i> info@mgmacademy.org
+                  </a>
+                  <a href="mailto:mgmacademys@gmail.com" class="contact-link">
+                    <i class="fas fa-envelope"></i> mgmacademys@gmail.com
+                  </a>
+                </div>
+                <p class="method-description">We typically respond to emails within 24 hours during weekdays</p>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-    
-    <!-- Email Form Card -->
-    <!--
-    <form class="email-form" id="contactForm" method="post" action="../php/sendMail.php" >
-        <h2>Send Us a Message</h2>
-        
-        <div class="form-group">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name ="name" required>
+      </section>
+
+      <!-- Contact Form Section -->
+      <section class="contact-form-section" id="contact-form">
+        <div class="container">
+          <div class="form-container">
+            <div class="form-header">
+              <h2>Send Us a Message</h2>
+              <p>Fill out the form below and we'll get back to you as soon as possible</p>
+            </div>
+            
+            <form class="contact-form" id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">
+                    <i class="fas fa-user"></i> Your Name
+                  </label>
+                  <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="email">
+                    <i class="fas fa-envelope"></i> Email Address
+                  </label>
+                  <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone">
+                    <i class="fas fa-phone"></i> Phone Number
+                  </label>
+                  <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                </div>
+                
+                <div class="form-group">
+                  <label for="subject">
+                    <i class="fas fa-question-circle"></i> Inquiry Type
+                  </label>
+                  <select id="subject" name="subject" required>
+                    <option value="" disabled selected>Select inquiry type</option>
+                    <option value="admissions">Admissions Inquiry</option>
+                    <option value="tour">Schedule a Campus Tour</option>
+                    <option value="programs">Program Information</option>
+                    <option value="feedback">Feedback & Suggestions</option>
+                    <option value="other">Other Inquiry</option>
+                  </select>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">
+                  <i class="fas fa-comment"></i> Your Message
+                </label>
+                <textarea id="message" name="message" rows="5" placeholder="Please type your message here..." required></textarea>
+              </div>
+              
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary">
+                  <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+                <button type="reset" class="btn btn-secondary">
+                  <i class="fas fa-redo"></i> Clear Form
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
-        
-        <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" required>
+      </section>
+
+      <!-- Map & Location Section -->
+      <section class="location-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Find Our Campus</h2>
+            <p class="section-subtitle">Visit us at our beautiful campus in Malaa</p>
+          </div>
+          
+          <div class="location-content">
+            <div class="location-info">
+              <h3>How to Reach Us</h3>
+              <div class="directions">
+                <div class="direction-step">
+                  <div class="step-number">1</div>
+                  <div class="step-content">
+                    <h4>From Nairobi CBD</h4>
+                    <p>Take Kangundo Road heading towards Kangundo Town</p>
+                  </div>
+                </div>
+                
+                <div class="direction-step">
+                  <div class="step-number">2</div>
+                  <div class="step-content">
+                    <h4>Pass Joska Town</h4>
+                    <p>Continue on Kangundo Road past Joska Town</p>
+                  </div>
+                </div>
+                
+                <div class="direction-step">
+                  <div class="step-number">3</div>
+                  <div class="step-content">
+                    <h4>Look for Twin Falls Estate</h4>
+                    <p>Our campus is located just before Twin Falls Estate in Malaa</p>
+                  </div>
+                </div>
+                
+                <div class="direction-step">
+                  <div class="step-number">4</div>
+                  <div class="step-content">
+                    <h4>Arrive at MGM Academy</h4>
+                    <p>Look for our signboard and gate entrance</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="operating-hours">
+                <h4><i class="fas fa-clock"></i> Operating Hours</h4>
+                <p>Monday - Friday: 7:30 AM - 5:00 PM</p>
+                <p>Saturday: 9:00 AM - 1:00 PM (Office only)</p>
+                <p>Sunday: Closed</p>
+              </div>
+            </div>
+            
+            <div class="map-placeholder">
+              <div class="map-image">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4548.704336773513!2d37.12942669220145!3d-1.2781788486065486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f65a2bfb66cb7%3A0xc57f49200f076aeb!2sMGM%20Academy!5e0!3m2!1sen!2ske!4v1767447865583!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <div class="map-note">
+                <p><i class="fas fa-info-circle"></i> Detailed directions will be provided when you schedule a visit</p>
+              </div>
+            </div>
+          </div>
         </div>
-        
-        <div class="form-group">
-            <label for="phone">Phone Number (Optional)</label>
-            <input type="tel" id="phone" name ="phone">
+      </section>
+
+      <!-- Quick Contact CTA -->
+      <section class="quick-contact">
+        <div class="container">
+          <div class="quick-contact-content">
+            <h2>Need Immediate Assistance?</h2>
+            <p>For urgent matters, please call our direct lines during office hours</p>
+            <div class="emergency-contacts">
+              <a href="tel:+254719214214" class="emergency-btn">
+                <i class="fas fa-phone"></i> Call Now: +254 719 214 214
+              </a>
+              <a href="tel:+254784214214" class="emergency-btn">
+                <i class="fas fa-phone"></i> Call Now: +254 784 214 214
+              </a>
+            </div>
+          </div>
         </div>
-        
-        <div class="form-group">
-            <label for="message">Your Message</label>
-            <textarea id="message" required name="message"></textarea>
-        </div>
-        
-        <button type="submit" class="submit-button" >Send Message</button>
-        </div>
-    </form>
-        </div>
-      </div>
+      </section>
     </main>
 
-    <footer>
-      <div id="footer"></div>
+    <!-- Footer Section -->
+    <footer id="footer">
     </footer>
-      -->
 
-    <script src="../js/mgm.js"></script>
-    <script src="../js/loadHeaderFooter.js"></script>
-    
+    <!-- JavaScript -->
     <script>
-      // Existing mailto functions
-      function sendFirstEmail() {
-        var recipient = "info@mgmacademy.org";
-        var subject = "RE: Inquiry";
-        var body = "Hello,%0D%0A%0D%0AThis is an auto-generated body text.%0D%0APlease feel free to edit it as needed.%0D%0AIf you would like us to call you please include your phone number at the end of the email.%0D%0AThank you.";
-        var mailtoLink = "mailto:" + recipient + "?subject=" + subject + "&body=" + body;
-        window.location.href = mailtoLink;
-      }
-
-      function sendSecondEmail() {
-        var recipient = "mgmacademys@gmail.com";
-        var subject = "RE: Inquiry";
-        var body = "Hello,%0D%0A%0D%0AThis is an auto-generated body text.%0D%0APlease feel free to edit it as needed.%0D%0AIf you would like us to call you please include your phone number at the end of the email.%0D%0AThank you.";
-        var mailtoLink = "mailto:" + recipient + "?subject=" + subject + "&body=" + body;
-        window.location.href = mailtoLink;
-      }
-      
+      document.addEventListener('DOMContentLoaded', function() {
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const menuIcon = document.querySelector('.menu-icon');
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        if (menuIcon) {
+          menuIcon.addEventListener('click', function(e) {
+            e.stopPropagation();
+          });
+        }
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function() {
+          if (menuToggle && menuToggle.checked) {
+            menuToggle.checked = false;
+          }
+        });
+        
+        // Close menu when clicking a link
+        navLinks.forEach(link => {
+          link.addEventListener('click', function() {
+            if (menuToggle && menuToggle.checked) {
+              menuToggle.checked = false;
+            }
+          });
+        });
+        
+        // Contact form submission
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+          contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            // Construct email body
+            let emailBody = `Name: ${name}\n`;
+            emailBody += `Email: ${email}\n`;
+            if (phone) emailBody += `Phone: ${phone}\n`;
+            emailBody += `Subject: ${subject}\n\n`;
+            emailBody += `Message:\n${message}`;
+            
+            // Encode for mailto link
+            const encodedBody = encodeURIComponent(emailBody);
+            const encodedSubject = encodeURIComponent(`${subject} - Inquiry from ${name}`);
+            
+            // Send to both email addresses
+            const recipients = "info@mgmacademy.org,mgmacademys@gmail.com";
+            const mailtoLink = `mailto:${recipients}?subject=${encodedSubject}&body=${encodedBody}`;
+            
+            // Open email client
+            window.location.href = mailtoLink;
+            
+            // Show confirmation message
+            setTimeout(() => {
+              alert('Thank you for your message! Your email client should open with your message ready to send. If it doesn\'t open automatically, please email us directly at info@mgmacademy.org');
+              
+              // Reset form
+              contactForm.reset();
+            }, 500);
+          });
+        }
+        
+        // Form reset functionality
+        const resetBtn = document.querySelector('button[type="reset"]');
+        if (resetBtn) {
+          resetBtn.addEventListener('click', function() {
+            setTimeout(() => {
+              alert('Form cleared. You can start filling it again.');
+            }, 100);
+          });
+        }
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            if (href === '#' || href === '#!') return;
+            
+            if (href.startsWith('#') && href.length > 1) {
+              e.preventDefault();
+              const targetElement = document.querySelector(href);
+              if (targetElement) {
+                window.scrollTo({
+                  top: targetElement.offsetTop - 100,
+                  behavior: 'smooth'
+                });
+              }
+            }
+          });
+        });
+        
+        // Animate contact methods on scroll
+        const observerOptions = {
+          threshold: 0.1,
+          rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('animate-in');
+            }
+          });
+        }, observerOptions);
+        
+        // Observe contact methods
+        document.querySelectorAll('.contact-method, .direction-step').forEach(element => {
+          observer.observe(element);
+        });
+      });
     </script>
-    
+    <script src="js/loadFooter.js"></script>
   </body>
 </html>
