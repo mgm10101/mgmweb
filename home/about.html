@@ -3,157 +3,317 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MGM Academy</title>
+    <title>About Us | MGM Academy</title>
+     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     
-    <!-- Link to main styles -->
-    <link rel="stylesheet" href="../css/about.css" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="styles.css" />
     
-    <!-- Google Fonts -->
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+   <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap" rel="stylesheet" />
-    
-    <!-- Mobile and tablet specific styles -->
-    <link rel="stylesheet" media="screen and (max-width: 767px)" href="../css/phones.css?v=2" />
-    <link rel="stylesheet" media="only screen and (min-width: 768px) and (max-width: 1080px)" href="../css/tablets.css" />
-    <link rel="icon" type="image/png" href="../favicon.ico" />
   </head>
   
   <body>
-    <!-- Header with logo and title -->
-    <div class="image-container-about">
-      <div class="logo">
-        <a href="../index.html"><img src="../web_png/MGM-nobg.png" alt="MGM Academy Logo" class="logo" /></a>
-      </div>
-      <h1 class="welcome">
-        The <span id="rby">MGM</span> Academy Story
-      </h1>
-    </div>
-
-    <!-- Main Header -->
+    <!-- Header Section -->
+   
+      
+      <!-- Navigation -->
+      <header class="header"> 
       <div id="header"></div>
+     </header>
+
+    <!-- About Hero Section -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero-content">
+          <h1 class="page-title">The <span class="highlight">MGM</span> Academy Story</h1>
+          <p class="page-subtitle">Where Nature Meets Learning and Creativity Blossoms</p>
+        </div>
+      </div>
+    </section>
 
     <main>
-      <!-- About Section -->
-      <section class="about">
-        <p>
-          MGM Academy is an upcoming learning institution based in a fast-growing residential area in Malaa along Kangundo Road, just after Joska. A peaceful, serene environment surrounded by nature where children can learn in tranquility and discover the importance of conservation. The school is committed to the best interests of students, guided by our core values and professional ethics.
-        </p>
-        <p>
-          MGM Academy is built on the foundation of promoting the welfare of all children, nurturing their potential to allow them to freely express themselves and grow with confidence.
-        </p>
-        <p>
-          The school follows the Montessori teaching method for early years and graduates learners to the Competency-Based Curriculum (CBC). Our teaching style emphasizes exposure to nature and learning through play. In the early years, children are especially open to learning from their environments, encouraging a sense of unity with the natural world.
-        </p>
+      <!-- About Introduction -->
+      <section class="about-intro">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-text">
+              <h2>Welcome to MGM Academy</h2>
+              <p>
+                MGM Academy is an upcoming learning institution based in a fast-growing residential area in Malaa along Kangundo Road, just after Joska. A peaceful, serene environment surrounded by nature where children can learn in tranquility and discover the importance of conservation.
+              </p>
+              <p>
+                The school is committed to the best interests of students, guided by our core values and professional ethics. MGM Academy is built on the foundation of promoting the welfare of all children, nurturing their potential to allow them to freely express themselves and grow with confidence.
+              </p>
+            </div>
+            
+            <div class="about-image">
+              <div class="image-placeholder about-img">
+                <img src="images/mgm-front.png" alt="MGM Academy Campus" style="height: 90%;" />
+                <span>Our Natural Campus Environment</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+<br>
+      <!-- Mission, Vision & Values -->
+      <section class="mission-vision-values">
+        <div class="container">
+          <div class="mv-grid">
+            <!-- Mission Card -->
+            <div class="mv-card mission">
+              <div class="mv-icon">
+                <i class="fas fa-bullseye"></i>
+              </div>
+              <h3>Our Mission</h3>
+              <p>To develop confident, independent young learners through an academic experience that ignites curiosity to unlock each child's potential.</p>
+            </div>
+            
+            <!-- Vision Card -->
+            <div class="mv-card vision">
+              <div class="mv-icon">
+                <i class="fas fa-eye"></i>
+              </div>
+              <h3>Our Vision</h3>
+              <p>To provide quality childcare in a safe and secure environment; supporting children to acquire skills, competencies, and experiences that prepare them for their learning journey through school and life.</p>
+            </div>
+            
+            <!-- Values Card -->
+            <div class="mv-card values">
+              <div class="mv-icon">
+                <i class="fas fa-heart"></i>
+              </div>
+              <h3>Our Core Values</h3>
+              <div class="values-list">
+                <div class="value-item">
+                  <i class="fas fa-shield-alt"></i>
+                  <span>Safe & Secure Environment</span>
+                </div>
+                <div class="value-item">
+                  <i class="fas fa-handshake"></i>
+                  <span>Honesty, Respect & Kindness</span>
+                </div>
+                <div class="value-item">
+                  <i class="fas fa-trophy"></i>
+                  <span>Excellence in Everything</span>
+                </div>
+                <div class="value-item">
+                  <i class="fas fa-users"></i>
+                  <span>Embracing Diversity</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <!-- Mission, Vision, Values -->
-      <div class="mission">
-        <div class="misvis">
-            <!-- Mission Card -->
-            <div class="mission-card">
-                <h3>Our Mission</h3>
-                <p>
-                    To develop confident, independent young learners through an academic experience that ignites curiosity to unlock each child’s potential.
-                </p>
+      <!-- Teaching Philosophy -->
+      <section class="philosophy">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Our Teaching Philosophy</h2>
+            <p class="section-subtitle">Blending Montessori with Competency-Based Education</p>
+          </div>
+          
+          <div class="philosophy-content">
+            <div class="philosophy-text">
+              <h3>Montessori Method</h3>
+              <p>The school follows the Montessori teaching method for early years, emphasizing self-directed activity, hands-on learning, and collaborative play. Children make creative choices in their learning while the classroom and teacher offer age-appropriate activities to guide the process.</p>
+              
+              <h3>Competency-Based Curriculum</h3>
+              <p>We graduate learners to the Competency-Based Curriculum (CBC), focusing on developing skills and competencies rather than just content knowledge. Our teaching style emphasizes exposure to nature and learning through play.</p>
+              
+              <h3>Nature-Based Learning</h3>
+              <p>In the early years, children are especially open to learning from their environments, encouraging a sense of unity with the natural world. Our campus provides the perfect setting for this holistic approach to education.</p>
             </div>
-            <!-- Vision Card -->
-            <div class="vision-card">
-                <h3>Our Vision</h3>
-                <p>
-                    To provide quality childcare in a safe and secure environment; supporting children to acquire skills, competencies, and experiences that prepare them for their learning journey through school and life.
-                </p>
+            
+            <div class="philosophy-image">
+              <div class="image-placeholder">
+                <img src="images/outside.png" alt="Children Learning Through Play" style="height: 90%;"/>
+                <span>Learning Through Play & Exploration</span>
+              </div>
             </div>
+          </div>
         </div>
-        <!-- Values Card -->
-        <div>
-        <div class="values-card">
-            <h3>Values:</h3>
-            <p>
-                <ul>
-                    <li>Safe and secure environment where everyone thrives</li>
-                    <li>Discipline—where children learn honesty, respect, kindness, and togetherness</li>
-                    <li>Excellence—Setting our own high standards and celebrating the achievements of others</li>
-                    <li>Diversity—Embracing diverse aspects of each child and celebrating them</li>
-                </ul>
-            </p>
-        </div>
-    </div>
-    </div>
+      </section>
 
-     <!-- Services/Offerings -->
-<section class="services">
-    <h2>What We Offer</h2>
-    <p>MGM Academy aims to make the community more environmentally conscious. Along with excelling in academic studies, we emphasize individual growth.</p>
-
-    <div class="offerings-container">
-        <!-- Environmental Activities Card -->
-        <div class="offer-card">
-            <img src="../images/environment.jpg" alt="Environmental Activities" class="offer-card-img">
-            <div class="offer-card-content">
-                <h4>Environmental Activities</h4>
+      <!-- What We Offer Section -->
+      <section class="services">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">What We Offer</h2>
+            <p class="section-subtitle">Comprehensive learning experiences for holistic development</p>
+          </div>
+          
+          <p class="services-intro">MGM Academy aims to make the community more environmentally conscious. Along with excelling in academic studies, we emphasize individual growth through diverse activities.</p>
+          
+          <div class="offerings-grid">
+            <!-- Environmental Activities -->
+            <div class="offer-card">
+              <div class="offer-icon">
+                <i class="fas fa-leaf"></i>
+              </div>
+              <div class="offer-content">
+                <h3>Environmental Activities</h3>
                 <p>We prioritize environmental awareness by integrating it into the curriculum. Children learn about nature, preservation, and the importance of protecting the environment.</p>
+              </div>
             </div>
-        </div>
-        
-        <!-- Language Activities Card -->
-        <div class="offer-card">
-            <img src="../images/language.png" alt="Language Activities" class="offer-card-img">
-            <div class="offer-card-content">
-                <h4>Language Activities</h4>
-                <p>In preschool, children develop essential language skills: listening, writing, and articulation through interactive activities.</p>
+            
+            <!-- Language Activities -->
+            <div class="offer-card">
+              <div class="offer-icon">
+                <i class="fas fa-language"></i>
+              </div>
+              <div class="offer-content">
+                <h3>Language Activities</h3>
+                <p>In preschool, children develop essential language skills: listening, writing, and articulation through interactive activities and storytelling.</p>
+              </div>
             </div>
-        </div>
-        
-        <!-- Math Activities Card -->
-        <div class="offer-card">
-            <img src="../images/math.png" alt="Math Activities" class="offer-card-img">
-            <div class="offer-card-content">
-                <h4>Math Activities</h4>
+            
+            <!-- Math Activities -->
+            <div class="offer-card">
+              <div class="offer-icon">
+                <i class="fas fa-calculator"></i>
+              </div>
+              <div class="offer-content">
+                <h3>Math Activities</h3>
                 <p>Our math activities focus on counting, sorting, adding, subtracting, and sequencing through fun games and creative projects.</p>
+              </div>
             </div>
-        </div>
-        
-        <!-- Creative Activities Card -->
-        <div class="offer-card">
-            <img src="../images/creative.jpg" alt="Creative Activities" class="offer-card-img">
-            <div class="offer-card-content">
-                <h4>Creative Activities</h4>
+            
+            <!-- Creative Activities -->
+            <div class="offer-card">
+              <div class="offer-icon">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+              <div class="offer-content">
+                <h3>Creative Activities</h3>
                 <p>We encourage children to express themselves artistically through painting, drawing, designing, and other creative outlets.</p>
+              </div>
             </div>
-        </div>
-        
-        <!-- Science Activities Card -->
-        <div class="offer-card">
-            <img src="../images/science.jpg" alt="Science Activities" class="offer-card-img">
-            <div class="offer-card-content">
-                <h4>Science Activities</h4>
+            
+            <!-- Science Activities -->
+            <div class="offer-card">
+              <div class="offer-icon">
+                <i class="fas fa-flask"></i>
+              </div>
+              <div class="offer-content">
+                <h3>Science Activities</h3>
                 <p>Children explore the wonders of science through hands-on experiments about measurements, magnets, plants, and more.</p>
+              </div>
             </div>
-        </div>
-        
-        <!-- Motor Skills Activities Card -->
-        <div class="offer-card">
-            <img src="../images/motor.jpg" alt="Motor Skills Activities" class="offer-card-img">
-            <div class="offer-card-content">
-                <h4>Motor Skills Development</h4>
+            
+            <!-- Motor Skills Activities -->
+            <div class="offer-card">
+              <div class="offer-icon">
+                <i class="fas fa-running"></i>
+              </div>
+              <div class="offer-content">
+                <h3>Motor Skills Development</h3>
                 <p>Outdoor and indoor games help children develop motor skills like throwing, catching, and balancing while enjoying fresh air.</p>
+              </div>
             </div>
+            
+            <!-- Music & Movement -->
+            <div class="offer-card">
+              <div class="offer-icon">
+                <i class="fas fa-music"></i>
+              </div>
+              <div class="offer-content">
+                <h3>Music & Movement</h3>
+                <p>Through songs, dance, and rhythm activities, children develop coordination, listening skills, and creative expression.</p>
+              </div>
+            </div>
+            
+            <!-- Social Development -->
+            <div class="offer-card">
+              <div class="offer-icon">
+                <i class="fas fa-hands-helping"></i>
+              </div>
+              <div class="offer-content">
+                <h3>Social Development</h3>
+                <p>Group activities and collaborative projects help children develop social skills, empathy, and teamwork abilities.</p>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-</section>
+      </section>
 
-<!-- Call to Action for More Information -->
-<div class="learn">
-    <p>Take a look at our classes to know more about the school.</p>
-    <a class="links" href="classes.html">Let's Go</a>
-</div>
+      <!-- Call to Action -->
+      <section class="about-cta">
+        <div class="container">
+          <div class="cta-content">
+            <h2>Ready to Learn More?</h2>
+            <p>Discover our classes and programs designed to nurture your child's growth and development.</p>
+            <div class="cta-buttons">
+              <a href="classes.html" class="btn btn-primary">
+                <i class="fas fa-book"></i> View Our Classes
+              </a>
+              <a href="contact.html" class="btn btn-secondary">
+                <i class="fas fa-phone"></i> Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <!-- Footer -->
-    <div id="footer"></div>
-
-    <!-- External Scripts -->
-    <script src="../js/mgm.js"></script>
-    <script src="../js/loadHeaderFooter.js"></script>
+    <!-- Footer Section -->
+     <footer id="footer"></footer>
+    <!-- JavaScript -->
+    <script>
+      // Mobile menu toggle
+      document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.getElementById('menu-toggle');
+        const menuIcon = document.querySelector('.menu-icon');
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        if (menuIcon) {
+          menuIcon.addEventListener('click', function(e) {
+            e.stopPropagation();
+          });
+        }
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function() {
+          if (menuToggle && menuToggle.checked) {
+            menuToggle.checked = false;
+          }
+        });
+        
+        // Close menu when clicking a link
+        navLinks.forEach(link => {
+          link.addEventListener('click', function() {
+            if (menuToggle && menuToggle.checked) {
+              menuToggle.checked = false;
+            }
+          });
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              window.scrollTo({
+                top: targetElement.offsetTop - 100,
+                behavior: 'smooth'
+              });
+            }
+          });
+        });
+      });
+    </script>
+    <script src="js/loadFooter.js"></script>
   </body>
 </html>
